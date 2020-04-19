@@ -11,209 +11,365 @@
    Base styles: opinionated defaults
    ========================================================================== */
 :root {
-  --dark-blue:   hsl(200, 100%, 40%);
-  --mid-blue:    hsl(200, 100%, 60%);
-  --light-blue:  hsl(200, 100%, 90%);
-  --dark-green:  hsl(155, 95%, 20%);
-  --mid-green:   hsl(155, 95%, 50%);
+  --darkest-blue: hsl(20, 80%, 50%);
+  --dark-blue: hsl(200, 100%, 40%);
+  --mid-blue: hsl(200, 100%, 80%);
+  --light-blue: hsl(200, 100%, 90%);
+  --dark-green: hsl(155, 95%, 20%);
+  --mid-green: hsl(118, 100%, 21%);
   --light-green: hsl(155, 95%, 80%);
-  --dark-red:    hsl(0, 100%, 60%);
-  --mid-red:     hsl(0, 95%, 50%);
-  --light-red:   hsl(5, 95%, 70%);
-  --purple:      hsla(270, 100%, 60%, .8);
-  --gray1:       hsl(0, 0%, 10%);
-  --gray2:       hsl(0, 0%, 30%);
-  --gray3:       hsl(0, 0%, 40%);
-  --gray4:       hsl(0, 0%, 50%);
-  --gray5:       hsl(0, 0%, 60%);
-  --gray6:       hsl(0, 0%, 65%);
-  --gray7:       hsl(0, 0%, 80%);
-  --gray8:       hsl(0, 0%, 90%);
+  --dark-red: hsl(0, 100%, 60%);
+  --mid-red: hsl(0, 95%, 50%);
+  --light-red: hsl(5, 95%, 70%);
+  --purple: hsla(270, 100%, 80%, .95);
+  --gray1: hsl(0, 0%, 10%);
+  --gray2: hsl(0, 0%, 15%);
+  --gray3: hsl(0, 0%, 40%);
+  --gray4: hsl(0, 0%, 50%);
+  --gray5: hsl(0, 0%, 60%);
+  --gray6: hsl(0, 0%, 65%);
+  --gray7: hsl(0, 0%, 80%);
+  --gray8: hsl(0, 0%, 90%);
+}
 
-
-
-
-
-
-/*-------------
-Divivide CSS into groupings  *Skins*, *Bones*, *Place*
-
-
----------*/
 html {
   scroll-behavior: smooth;
+
 }
+
+
 body {
   display: flex;
   flex-flow: column nowrap;
-  min-height: 800vh;
-  width: 100vw;
+  min-height: 600vh;
+  width: 100vw ;
+  max-width: 100vw;
+  min-width: 99vw;
   overflow-x: hidden;
+  background-color: var(--gray2);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: 400;
 
 }
 
+
+
+
+
+
+
+  /*–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray3);
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: var(--mid-blue);
+}
+
+
 header {
   height: 100vh;
-  width: calc(100% - 10vw);
- padding: 0 5vw;
+  width: 100vw;
+
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-attachment: fixed;
-  background: linear-gradient(215deg, var(--four)5%, var(--three)10%, var(--two)30%, var(--one)70%);
+  background: linear-gradient(200deg, var(--gray2)10%, var(--gray3)50% );
 }
 
 header > h1 {
 
-  color: var(--four);
-  font-family: "Montserrat Subrayada";
-  font-size: 65px;
+  color: hsla(200,0%,35%, 0.9);
+  font-family: "Montserrat Subrayada", "Droid Sans Mono", monospace;
+  font-size: 2rem;
   text-align: right;
+  letter-spacing: 1px;
+  padding:25vw;
+  text-shadow: -1px -1px 3px #d7d6d6, 2px 2px 4px #2f2d2d,-4px -4px 8px #aaa8a8, 5px 5px 10px black,
+  -15px -15px 30px #aaaaaa, 15px 15px 30px black;
 }
+
+h2 {
+  width: 100%;
+  color: #8b8b8b;
+  height: 10vh;
+  font-size: 2rem;
+  padding-top: 2vh;
+  padding-left: 2vw;
+
+  margin: 1vh auto;
+  align-content: center;
+  text-shadow: -2px -2px 4px #d7d6d6, 5px 5px 10px #2f2d2d,-5px -5px 10px #aaa8a8, 5px 5px 10px black,
+  -15px -15px 30px #aaaaaa, 15px 15px 30px black;
+
+  font-family: "Montserrat Subrayada", "Droid Sans Mono", Monaco;
+
+
+;
+}
+
+
+h3 {
+  border: 1px solid hsla(0, 0%, 67%, 0.4);
+  padding: 1.5vh 2vw;
+  background-color: hsla(0, 0%, 67%, 0.3);
+  box-shadow: 10px 10px 40px hsla(0, 0%, 67%, 0.3);
+  border-radius: 45px;
+  color: var(--mid-blue);
+  height: 5vh;
+  margin: 0 auto;
+  align-content: center;
+  text-shadow: -2px -2px 4px #98ffff, 5px 5px 10px #3b5757,-5px -5px 10px #6fffff, 5px 5px 10px #080707,
+  -15px -15px 30px #aaaaaa, 15px 15px 30px black;
+  font-size: 1.8rem;
+  font-family: "Montserrat Subrayada", "Droid Sans Mono", Monaco;
+}
+
+
 
 nav.navbar {
   height: 10vh;
   position: sticky;
   top: 0;
   width: 100vw;
+  padding: 0 -10vw;
   display: flex;
   align-items:center;
-  justify-content: flex-end;
-  background-color: var(--one);
+  z-index:10;
+  justify-content:space-around;
+  background-color: var(--gray2);
+  box-shadow: 0 5px 6px rgba(30, 30, 30, 0.58);
+}
+nav > ul {
+  width: 100%;
+}
+nav > ul li:active {
+  color: var(--mid-blue)
 }
 
-.scroll-destination {
-  min-height: 150vh;
-  max-width : 100vw;
+
+
+
+
+
+.scroll-target {
+  padding-top : 15vh;
+  min-height: 80vh;
+  height: 85vh;
+  min-width : 100vw;
   display: flex;
+  flex-flow: column nowrap;
+
+  overflow-x: hidden;
+  scroll-snap-align: start;
+
 
 }
 
-#intro  {
-  min-height: 100vh;
-  max-width:  100vw;
 
-  padding: 5vh 5vw;
-}
+#skills.scroll-target {
 
-.clip-container {
-  background-color: var(--dark-blue);
-  border-radius: 15px;
-}
+align-items: center;
+
+background-color: var(--gray2);
 
 
-
-#intro > div > p {
-  background-color: var(--light-blue);
-  clip-path: circle(5% at 10% 10%);
-  transition: all 2s .5s;
-  color: var(--dark-blue);
 }
 
 
+
+
+
+
+#projects.scroll-target {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 350vh;
+  max-height: 800vh;
+}
 
 .card {
-  width: 30vw;
-  height: 100%;
-  border-radius: 8px;
-  font-size: 2rem;
-  padding: 5vh 5vw;
+  min-width: 90vw ;
+
+  max-width: 95vw;
+  min-height: 60vh;
+  max-height: 90vh ;
+  background: -moz-linear-gradient(307deg, rgba(77,77,77,1) 0%, rgba(65,65,65,1) 32%, rgba(64,64,64,1) 37%, rgba(38,38,38,1) 59%, rgba(30,30,30,1) 83%, rgba(26,26,26,1) 97%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(77,77,77,1)), color-stop(32%, rgba(65,65,65,1)), color-stop(37%, rgba(64,64,64,1)), color-stop(59%, rgba(38,38,38,1)), color-stop(83%, rgba(30,30,30,1)), color-stop(97%, rgba(26,26,26,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(307deg, rgba(77,77,77,1) 0%, rgba(65,65,65,1) 32%, rgba(64,64,64,1) 37%, rgba(38,38,38,1) 59%, rgba(30,30,30,1) 83%, rgba(26,26,26,1) 97%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(307deg, rgba(77,77,77,1) 0%, rgba(65,65,65,1) 32%, rgba(64,64,64,1) 37%, rgba(38,38,38,1) 59%, rgba(30,30,30,1) 83%, rgba(26,26,26,1) 97%); /* opera 11.10+ */
+  background: -ms-linear-gradient(307deg, rgba(77,77,77,1) 0%, rgba(65,65,65,1) 32%, rgba(64,64,64,1) 37%, rgba(38,38,38,1) 59%, rgba(30,30,30,1) 83%, rgba(26,26,26,1) 97%); /* ie10+ */
+  background: linear-gradient(143deg, rgba(77,77,77,1) 0%, rgba(65,65,65,1) 32%, rgba(64,64,64,1) 37%, rgba(38,38,38,1) 59%, rgba(30,30,30,1) 83%, rgba(26,26,26,1) 97%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4D4D4D', endColorstr='#1A1A1A',GradientType=0 ); /* ie6-9 */;
+  font-family: "Avenir Next", serif;
+  margin: 1vh auto;
+
+  border-radius: 10px;
+  font-size: 1.1rem;
+  padding: 3vh 3vw;
+  color:var(--mid-blue);
+  box-shadow: 12px 18px 36px hsl(0,0%,8%),
+  -12px -18px 36px hsl(0,0%, 28%);
+;
+
 }
 
-.expand-cirle-reveal {
-
-  color: var(--mid-blue);
-  background-color: var(--light-blue);
-  clip-path: circle(5% at 10% 10%);
-}
-
-.expand-circle-reveal {
-  clip-path: circle(65% at 40% 50%);
-  background-color: var(--mid-blue);
-  color:var(--light-blue);
-}
 
 
-.box-wipe-enter-active { animation: 1s box-wipe-enter; }
-.box-wipe-leave-active { animation: 1s box-wipe-leave; }
 
-@keyframes box-wipe-enter {
-  0% { clip-path: inset(25% 100% 25% -50%); }
-  50% { clip-path: inset(25% 0% 25% 50%); }
-  100% { clip-path: inset(0); }
-}
-
-@keyframes box-wipe-leave {
-  0% { clip-path: inset(0); }
-  50% { clip-path: inset(25% 50% 25% 0%); }
-  100% { clip-path: inset(25% -50% 25% 100%); }
-}
-
-.melt-in:hover { animation: 2s melt-enter; }
-.melt-out{ animation: 2s melt-leave; }
-
-@keyframes melt-enter {
-  0% {
-    clip-path: path('M0 -0.12C8.33 -8.46 16.67 -12.62 25 -12.62C37.5 -12.62 35.91 0.15 50 -0.12C64.09 -0.4 62.5 -34.5 75 -34.5C87.5 -34.5 87.17 -4.45 100 -0.12C112.83 4.2 112.71 -17.95 125 -18.28C137.29 -18.62 137.76 1.54 150.48 -0.12C163.19 -1.79 162.16 -25.12 174.54 -25.12C182.79 -25.12 191.28 -16.79 200 -0.12L200 -34.37L0 -34.37L0 -0.12Z');
-  }
-  100% {
-    clip-path: path('M0 199.88C8.33 270.71 16.67 306.13 25 306.13C37.5 306.13 35.91 231.4 50 231.13C64.09 230.85 62.5 284.25 75 284.25C87.5 284.25 87.17 208.05 100 212.38C112.83 216.7 112.71 300.8 125 300.47C137.29 300.13 137.76 239.04 150.48 237.38C163.19 235.71 162.16 293.63 174.54 293.63C182.79 293.63 191.28 262.38 200 199.88L200 0.13L0 0.13L0 199.88Z');
-  }
-}
-
-@keyframes melt-leave {
-  0% {
-    clip-path: path('M0 0C8.33 -8.33 16.67 -12.5 25 -12.5C37.5 -12.5 36.57 -0.27 50 0C63.43 0.27 62.5 -34.37 75 -34.37C87.5 -34.37 87.5 -4.01 100 0C112.5 4.01 112.38 -18.34 125 -18.34C137.62 -18.34 138.09 1.66 150.48 0C162.86 -1.66 162.16 -25 174.54 -25C182.79 -25 191.28 -16.67 200 0L200 200L0 200L0 0Z');
-  }
-  100% {
-    clip-path: path('M0 200C8.33 270.83 16.67 306.25 25 306.25C37.5 306.25 36.57 230.98 50 231.25C63.43 231.52 62.5 284.38 75 284.38C87.5 284.38 87.5 208.49 100 212.5C112.5 216.51 112.38 300.41 125 300.41C137.62 300.41 138.09 239.16 150.48 237.5C162.86 235.84 162.16 293.75 174.54 293.75C182.79 293.75 191.28 262.5 200 200L200 200L0 200L0 200Z');
-  }
-}
 
 .navbar > ul {
-  width: 40vw;
+  width: 100vw;
   list-style-type: none;
   display: flex;
   color: var(--gray8);
+  padding-left: 0;
   justify-content: space-around;
 }
 
 .nav-link > a {
+  font-family: "Input Mono";
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   color: var(--gray8);
 }
 
-.right {
- text-align: right;
-  align-self: flex-end;
-}
+
 
 section.content-main {
-  width: calc(100% - 140px);
-  margin-left: 70px;
-  margin-right: auto;
-  height: 300vh;
-  display:flex;
+  width: 100vw;
+  margin: 0;
+  min-height: 600vh;
+  display: flex;
+  flex-grow: 1;
   flex-flow: column nowrap;
   justify-content: flex-start;
-  align-items: flex-start;
-}
-
-section.class > div >  p {
-  color: var(--gray1);
-  padding: 4vh 8vw;
-  border-radius: 1em;
-  width: 35vw;
-  font-size: 20px;
-  background-color: var(--two);
-  color: white;
-
-
 }
 
 
 
+
+
+
+
+.project-card {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 90vw;
+
+  max-height: 300vh;
+  font-size: 1.1rem;
+  color: var(--light-blue)
+}
+
+.project-card p {
+  width: 90%;
+  padding: 5vw;
+}
+
+ul.img-list {
+  padding: 4px 4px;
+  display: flex;
+  max-width: 80vw;
+  flex-flow: row-reverse wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1vh 1vw;
+  list-style: none;
+
+
+}
+ul.img-list li.img-list-item {
+  margin: 5px;
+  padding: 5px;
+  display: inline-block;
+  border: 2px inset var(--gray4);
+
+}
+ul.img-list li.img-list-item a {
+  padding: 5px;
+  display: inline-block;
+  border: 1px solid #f2f2f2;
+}
+ul.img-list li.img-list-item  img {
+  max-width: 10vw;
+  max-height: 10vh;
+  width: auto;
+  height: auto;
+  display: block;
+  transition: transform 2s ease-out;
+}
+ul.img-list li.img-list-item:hover  img {
+  transform: scale(5.5) ;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.message {
+  color: #729d9d;
+}
+
+i {
+  color: var(--dark-blue);
+}
+
+#footer{
+  background-color: var(--gray6);
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  height: 14vh;
+}
+
+ul.icons {
+  list-style-type: none;
+  display: flex;
+  justify-content:space-around;
+  width: 100%;
+  align-items: center;
+}
+
+.pics {
+  display:flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+#projects.scroll-target {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  min-height: 350vh;
+  max-height: 500vh;
+}
+#footer a {
+  color: #252525;
+  text-decoration: none;
+}
+
+section#footer {
+  margin: auto 0 0 0;
+  position: relative;
+  bottom: 0;
+  box-shadow: -10px -10px 20px hsla(0,0%,65%,0.5)
+
+}
 
 html {color: #222;
   font-size: 1em;
@@ -221,15 +377,143 @@ html {color: #222;
 margin:0 auto;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+  /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 568px) {
+
+  header > h1 {
+    font-size: 3rem;
+  }
+
+  .card {
+    vertical-align: middle;
+    max-width: 70vw;
+    min-width: 50vw;
+    font-size: 1.3rem;
+    min-height: 50vh;
+    max-height: 90vh;
+  }
+  #projects.scroll-target {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 350vh;
+    max-height: 800vh;
+  }
+  section.content-main {
+    min-height: 550vh;
+  }
+}
+
+
+
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1050px) {
+  header > h1 {
+    font-size: 4rem;
+
+  }
+  #projects.scroll-target {
+    padding-top : 10vh;
+    justify-content: flex-start;
+    min-height:250vh;
+  }
+   {
+    margin-bottom: 10vh;
+  }
+  #skills .card {
+    max-height: 40vh;
+    min-height: 30vh;
+  }
+#about .card {
+  max-height: 40vh;
+  min-height: 30vh;
+}
+section.content-main {
+  min-height: 450vh
+}
+
+  .card {
+    max-width: 45vw;
+    min-width:  35vw;
+    font-size: 1.3rem;
+    margin-bottom: 10vh;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+  /* Styles */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -249,7 +533,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #0c304d;
   margin: 1em 0;
   padding: 0;
 }
@@ -391,9 +675,6 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),

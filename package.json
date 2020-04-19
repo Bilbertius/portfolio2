@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "sal.js": "^0.7.4"
   }
 }

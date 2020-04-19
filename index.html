@@ -8,12 +8,13 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
 
   <link href="site.webmanifest" rel="manifest">
-  <link href="icon.png" rel="apple-touch-icon">
+  <link href="favicon.ico" rel="apple-touch-icon">
   <!-- Place favicon.ico in the root directory -->
   <link href="./node_modules/sal.js/dist/sal.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 
+  <script src="https://kit.fontawesome.com/2c80615ba4.js" crossorigin="anonymous"></script>
   <meta content="#fafafa" name="theme-color">
 </head>
 
@@ -29,13 +30,21 @@
   <h1
     data-sal="fade"
     data-sal-delay="400"
-    data-sal-duration="3800"
+    data-sal-duration="2000"
     data-sal-easing="ease-out-bounce"
-  >hello,
+  >
+    hello,
     <br/>
-    my name is <br/>
-    will
+    my name is
+    <em data-sal="slide-down"
+        data-sal-delay="100"
+        data-sal-durationn="2000"
+        data-sal-easing="ease-out-bounce"
+    >will</em>
+
   </h1>
+
+
 </header>
 
 <nav class="navbar">
@@ -46,129 +55,189 @@
   </ul>
 </nav>
 <section class="content-main">
-  <div id="intro">
 
+  <div id="about" class="scroll-target">
 
     <h2
-      data-sal="slide-left"
-      data-sal-delay="200"
+      data-sal="slide-up"
       data-sal-duration="2000"
-      data-sal-easing="ease-out-back"
+      data-sal-delay="300"
+      data-sal-easing="ease-in-bounce"
+    >who am i?</h2>
 
+    <p id="about-card" class="card"
+       data-sal="zoom"
+       data-sal-delay="500"
+       data-sal-duration="2000"
 
-    >Why should I care? </h2>
-    <div
-      class='clip-container card melt-in melt-out'
-    >s
-      <p class="card melt-in ">
-        Could you make use of a ... <br>
-        Burgeoning web developer, music lover, and life long learner stuck on
-        a perpetually looping treadmill of curiosity.
-        <br>
+    >
+      I am still trying to get a handle on that question myself, but for
+      the sake of brevity I'll say that  I am burgeoning web developer,
+      music addict, and life long
+      learner stuck on a perpetually looping treadmill of curiosity.<br/><br/>
 
-      </p>
-    </div>
-  </div>
-  <div id="about">
-
-    <h2 class="right"
-        data-sal="slide-down"
-        data-sal-delay="300"
-        data-sal-duration="1800"
-        data-sal-easing="ease-out">This Tings</h2>
-    <p class="right"
-       data-sal="slide-up"
-       data-sal-delay="100"
-       data-sal-duration="1800"
-       data-sal-easing="ease-out-back">
-      `
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      `
+      I hail from the great state of Vermont, but now I call Colorado home, which turns out to be
+      a great place for me to to satisfy my interests outside of the digit world.
+      Said interests includes art, soccer, education, music, philosophy,
+      psychology, politics, camping, writing, road trips, hiking, and giving
+      dogs too much attention.
 
     </p>
-  </div>
-  <div id="skills">
+    </div>
+
+  <div id="skills" class="scroll-target">
 
     <h2
-      class="right"
-      data-sal="slide-left"
+      data-sal="slide-up"
+      data-sal-duration="2000"
       data-sal-delay="200"
-      data-sal-duration="1800"
-      data-sal-easing="ease-out">Furst tings furst</h2>
-    <p class="left"
-       data-sal="fade"
+      data-sal-easing="ease-in-bounce"
+    >my skills</h2>
+
+    <p id='skills-card'class="card"
+       data-sal="zoom"
+       data-sal-delay="500"
+       data-sal-duration="2000"
+    >
+      My technical skills include proficiency in HTML, CSS3, and JavaScript (ES6+)
+      with knowledge of and experience with Semantic HTML, RESTful APIs,
+      Bootstrap, ExpressJS, postgresQL, React, Git, Responsive Design,
+      and svelte 3. In addition I am comfortable with prototyping and wireframing
+      tools such as Figma, Sketch, Framer, inVision and Adobe XD.<br><br>
+
+      I'm always looking to add to this ever growing list, so if you have a project in mind,
+    and you think my services could be of use don't allow this to limit your idea of what I can or will do.
+
+
+  </div>
+
+  <div id="projects" class="scroll-target">
+
+    <h2 id="projects-heading"
+        data-sal="slide-left"
+        data-sal-duration="2000"
+        data-sal-delay="200"
+        data-sal-easing="ease-in-bounce"
+    >my projects</h2>
+
+    <div class="card pics">
+    <h3 class="project-header">JamCloud</h3>
+    <p id="projects-card-3" class="project-card"
+       data-sal="slide-up"
        data-sal-delay="400"
        data-sal-duration="2000"
-       data-sal-easing="ease-in">
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
+    >
+      Jamcloud is an app built with react, expressJS, and postgresQL that is meant to help fans of improvisational music
+      track and share the versions of songs that they enjoy. Plans to add the ability for users to share lists with friends as
+      well as rate other users choices and see how their favorites stack up against a list compreised of aggregate ratings.
+
+    </p>
+
+      <p class="message">hover to enlarge images</p>
+
+      <ul class="img-list">
+        <li class="img-list-item"><img src="./img/projects28.png" alt="jamcloud screen"></li>
+        <li class="img-list-item"><img src="./img/projects1.png" alt=" jamcloud screen"></li>
+        <li class="img-list-item"><img src="./img/projects2.png" alt=" jamcloud screen"></li>
+        <li class="img-list-item"><img src="./img/projects4.png" alt=" jamcloud screen"></li>
+        <li class="img-list-item"><img src="./img/projects29.png" alt="jamcloud screen"></li>
+        <li class="img-list-item"><img src="./img/projects3.png" alt=" jamcloud screen"></li>
+        <li class="img-list-item"><img src="./img/projects27.png" alt="jamcloud screen"></li>
+      </ul>
+</div>
+
+
+
+
+
+    <div class="card pics">
+    <h3 class="project-header">Try-lingual</h3>
+    <p id="projects-card-1" class="project-card"
+       data-sal="slide-up"
+       data-sal-delay="400"
+       data-sal-duration="2000"
+    >
+      Try-lingual is a language learning app that allows users to learn foreign vocabulary.
+      Try-lingual uses the  spaced repetition learning technique to help users memorize the
+      words for ever increasing lengths of time.
+      <br>
+      Currently, the app only comes in German.
+      The front-end was built with React while the on the backend an express API was built to
+      connect the front-end with our PostgresQL database.
 
 
     </p>
-  </div>
-  <div id="projects">
 
-    <h2
-      class="right"
-      data-sal="fade"
-      data-sal-delay="300"
-      data-sal-duration="1900"
-      data-sal-easing="ease-out">This Tings</h2>
-    <p
-      class="left"
-      data-sal="slide-left"
-      data-sal-delay="1400"
-      data-sal-duration="2000"
-      data-sal-easing="ease-out-back">
-      `
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      'dummy text that for which is to make certain we have the most ancillary and trenchant buggery'
-      `
 
+      <p class="message">hover to enlarge images</p>
+      <ul class="img-list">
+        <li class="img-list-item"><img src="./img/projects5.png" alt="try-lingual screen "></li>
+        <li class="img-list-item"><img src="./img/projects6.png" alt="try-lingual screen "></li>
+        <li class="img-list-item"><img src="./img/projects7.png" alt="try-lingual screen "></li>
+        <li class="img-list-item"><img src="./img/projects8.png" alt="try-lingual screen "></li>
+        <li class="img-list-item"><img src="./img/projects9.png" alt="try-lingual screen "></li>
+        <li class="img-list-item"><img src="./img/projects10.png" alt="try-lingual screen"></li>
+        <li class="img-list-item"><img src="./img/projects11.png" alt="try-lingual screen"></li>
+      </ul>
+    </div>
+
+
+    <div class="card pics">
+    <h3 class="project-header">Indecisio</h3>
+    <p id="projects-card-2" class="project-card"
+       data-sal="slide-up"
+       data-sal-delay="400"
+       data-sal-duration="2000"
+    >
+    This app was built with react, express, and postgresql with the goal in mind of providing people with
+      a way to find inspiration when at a loss concerning how to spend their free time. Users can submit activities
+      that they think others might enjoy, and thus the pool of possible activities can grow organically over time. When submitting an activity the user
+      must pick a category to such as learning, entertainment, fitness, etc. that the activity falls under. The user generating an
+      activity can then narrow down the possible activity suggestions by selecting a category. The user can accept or reject as many activities as they wish.
+      The app also keeps track of the most popular activites, both of the user and from all users.
     </p>
+      <p class="message">hover to enlarge images</p>
+      <ul class="img-list">
+
+        <li class="img-list-item"><img src="./img/projects26.png" alt="Indecisio screen"></li>
+        <li class="img-list-item"><img src="./img/projects18.png" alt="Indecisio screen"></li>
+        <li class="img-list-item"><img src="./img/projects14.png" alt="Indecisio screen"></li>
+        <li class="img-list-item"><img src="./img/projects15.png" alt="Indecisio screen"></li>
+        <li class="img-list-item"><img src="./img/projects16.png" alt="Indecisio screen"></li>
+        <li class="img-list-item"><img src="./img/projects17.png" alt="Indecisio screen"></li>
+        <li class="img-list-item"><img src="./img/projects25.png" alt="Indecisio screen"></li>
+        <li class="img-list-item"><img src="./img/projects19.png" alt="Indecisio screen"></li>
+        <li class="img-list-item"><img src="./img/projects20.png" alt="Indecisio screen"></li>
+        <li class="img-list-item"><img src="./img/projects24.png" alt="Indecisio screen"></li>
+        <li class="img-list-item"><img src="./img/projects13.png" alt="Indecisio screen"></li>
+        <li class="img-list-item"><img src="./img/projects12.png" alt="Indecisio screen"></li>
+      </ul>
+
+    </div>
+
   </div>
+
+
 </section>
-<script src="js/vendor/modernizr-3.8.0.min.js"></script>
-<script crossorigin="anonymous"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+
+<section id="footer">
+  <ul class="icons">
+    <li><a href="http://www.linkedin.com"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+    <li><a href="mailto:lauchlinmacneil@gmail.com"><i class="icon fas fa-at"></i> E-mail</a></li>
+    <li><a href="https://github.com/bilbertius"><i class="fab fa-github-alt"></i> Github </a></li>
+  </ul>
+
+</section>
+
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 
-<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script src="./node_modules/sal.js/dist/sal.js">
-
 </script>
-
 <script>
   console.log(sal());
   sal({
-    threshold: 0.8,
+    threshold: 0.2,
     once: false
   });
 </script>
