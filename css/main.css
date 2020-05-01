@@ -73,14 +73,14 @@ body {
   background: var(--mid-blue);
 }
 
-
 header {
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
 
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: flex-end;
   background: linear-gradient(200deg, var(--gray2)10%, var(--gray3)50% );
 }
 
@@ -91,7 +91,7 @@ header > h1 {
   font-size: 2rem;
   text-align: right;
   letter-spacing: 1px;
-  padding:25vw;
+  padding:15vh;
   text-shadow: -1px -1px 2px #e5e5e5, 2px 2px 2px #000000,-4px -4px 8px #aaa8a8, 5px 5px 10px black,
   -15px -15px 30px #aaaaaa, 15px 15px 30px black;
 }
@@ -110,7 +110,14 @@ h2 {
   text-shadow: 2px 2px 4px #110f0f, -1px -1px 2px #f7f4f4;
 
 }
-
+.scatter-quote {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--gray2);
+  width: 70vw;
+  text-shadow: -1px -1px 2px var(--gray6),1px 1px 2px var(--gray1),2px 2px 4px var(--gray1),-2px -2px 4px var(--gray6);
+  font-size: 2rem;
+  margin-bottom: 30vh;
+}
 
 h3 {
   border: 1px solid hsla(0, 0%, 67%, 0.4);
@@ -147,7 +154,7 @@ nav > ul {
   width: 100%;
 }
 nav > ul li:active {
-  color: var(--mid-blue)
+  color: var(--gray7)
 }
 
 
@@ -158,7 +165,7 @@ nav > ul li:active {
 .scroll-target {
   padding-top : 15vh;
   min-height: 80vh;
-  height: 85vh;
+  height: 100vh;
   min-width : 100vw;
   display: flex;
   flex-flow: column nowrap;
