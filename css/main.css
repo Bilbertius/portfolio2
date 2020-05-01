@@ -70,9 +70,8 @@ body {
 
 
 ::-webkit-scrollbar-thumb {
-  background: var(--mid-blue);
+  background: var(--gray5);
 }
-
 header {
   height: 90vh;
   width: 100vw;
@@ -81,14 +80,14 @@ header {
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: flex-end;
-  background: linear-gradient(200deg, var(--gray2)10%, var(--gray3)50% );
+  background: linear-gradient(200deg, var(--gray3)10%, var(--gray4)50% );
 }
 
 header > h1 {
 
-color: hsla(0, 0%, 73%, 0.9);
+color: hsla(0, 0%, 72%, 0.9);
   font-family: "Montserrat Subrayada", "Droid Sans Mono", monospace;
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-align: right;
   letter-spacing: 1px;
   padding:15vh;
@@ -96,12 +95,17 @@ color: hsla(0, 0%, 73%, 0.9);
   -15px -15px 30px #aaaaaa, 15px 15px 30px black;*/
 
   text-shadow:
-    1px 1px 3px hsla(180, 1%, 37%, 0.8),
-    -1px -1px 2px hsla(0, 0%, 100%, 0.8),
-    1px -1px 2px hsla(180, 1%, 37%, 0.2),
-    -1px 1px 2px hsla(180, 1%, 37%, 0.2),
-     -1px -1px 2px hsla(180, 1%, 37%, 0.5),
-     1px 1px 2px hsla(0, 0%, 100%, 0.3);
+    -4px -3px 5px hsla(0, 0%, 75%, 0.5),
+    -3px -4px 5px hsla(0, 0%, 79%, 0.6),
+    -2px -2px 2px hsla(0, 3%, 95%, 0.7),
+    -2px -2px 2px hsla(0, 3%, 98%, 0.8),
+    2px 2px 2px hsla(180, 1%, 20%, 0.8),
+    2px 2px 2px hsla(180, 1%, 20%, 0.8),
+    4px 3px 3px hsla(180, 1%, 30%, 0.8),
+    3px 4px 4px hsla(180, 1%, 30%, 0.7),
+    3px 4px 5px hsla(180, 1%, 30%, 0.6),
+    4px 3px 5px hsla(180, 1%, 30%, 0.5)
+
 
 }
 
@@ -250,8 +254,7 @@ background-color: var(--gray2);
   font-size: 1.1rem;
   padding: 3vh 3vw;
   color:var(--mid-blue);
-  box-shadow: 12px 18px 36px hsl(0,0%,8%),
-  -12px -18px 36px hsl(0,0%, 28%);
+  box-shadow: 6px 6px 15px rgba(28, 28, 28, 0.9), -6px -6px 12px rgba(100, 100, 100, 0.9), 6px -6px 12px rgba(28, 28, 28, 0.2), -6px 6px 12px rgba(28, 28, 28, 0.2), inset -1px -1px 2px rgba(28, 28, 28, 0.5), inset 1px 1px 2px rgba(100, 100, 100, 0.3);
 ;
 
 }
