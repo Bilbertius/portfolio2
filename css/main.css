@@ -23,7 +23,7 @@
   --light-red: hsl(5, 95%, 70%);
   --purple: hsla(270, 100%, 80%, .95);
   --gray1: hsl(0, 0%, 10%);
-  --gray2: hsl(0, 0%, 15%);
+  --gray2: hsl(0, 0%, 20%);
   --gray3: hsl(0, 0%, 40%);
   --gray4: hsl(0, 0%, 50%);
   --gray5: hsl(0, 0%, 60%);
@@ -143,14 +143,7 @@ h2 {
   text-shadow: 2px 2px 4px #110f0f, -1px -1px 2px #f7f4f4;
 
 }
-.scatter-quote {
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: var(--gray2);
-  width: 70vw;
-  text-shadow: -1px -1px 2px var(--gray6),1px 1px 2px var(--gray1),2px 2px 4px var(--gray1),-2px -2px 4px var(--gray6);
-  font-size: 2rem;
-  margin-bottom: 30vh;
-}
+
 
 h3 {
   border: 1px solid hsla(0, 0%, 67%, 0.4);
@@ -198,11 +191,11 @@ nav > ul li:active {
 .scroll-target {
   padding-top : 15vh;
   min-height: 80vh;
-  height: 100vh;
+
   min-width : 100vw;
   display: flex;
   flex-flow: column nowrap;
-
+  flex-grow: 1;
   overflow-x: hidden;
   scroll-snap-align: start;
 
@@ -232,6 +225,7 @@ background-color: var(--gray2);
   min-height: 350vh;
   max-height: 800vh;
   text-align: justify;
+  background-color: var(--gray2);
 }
 
 .card {
@@ -239,7 +233,7 @@ background-color: var(--gray2);
 
   max-width: 95vw;
   min-height: 60vh;
-  max-height: 90vh ;
+  flex-grow: 1;
   background: -moz-linear-gradient(307deg, rgba(77,77,77,1) 0%, rgba(65,65,65,1) 32%, rgba(64,64,64,1) 37%, rgba(38,38,38,1) 59%, rgba(30,30,30,1) 83%, rgba(26,26,26,1) 97%); /* ff3.6+ */
   background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(77,77,77,1)), color-stop(32%, rgba(65,65,65,1)), color-stop(37%, rgba(64,64,64,1)), color-stop(59%, rgba(38,38,38,1)), color-stop(83%, rgba(30,30,30,1)), color-stop(97%, rgba(26,26,26,1))); /* safari4+,chrome */
   background: -webkit-linear-gradient(307deg, rgba(77,77,77,1) 0%, rgba(65,65,65,1) 32%, rgba(64,64,64,1) 37%, rgba(38,38,38,1) 59%, rgba(30,30,30,1) 83%, rgba(26,26,26,1) 97%); /* safari5.1+,chrome10+ */
@@ -398,8 +392,8 @@ ul.icons {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  min-height: 350vh;
-  max-height: 500vh;
+  min-height: 400vh;
+  max-height: 600vh;
 }
 #footer a {
   color: #252525;

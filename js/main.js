@@ -1,4 +1,4 @@
-(function() {
+window.onload = (function() {
   let windowHeight;
   let elements;
 
