@@ -180,9 +180,8 @@ nav > ul li:active {
 
 
 .scroll-target {
-  padding-top : 15vh;
+  padding-top : 10vh;
   min-height: 90vh;
-
   min-width : 100vw;
   display: flex;
   flex-flow: column nowrap;
@@ -216,6 +215,9 @@ background-color: var(--gray2);
 }
 
 .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 70vw ;
   max-width: 80vw;
   background-color: var(--gray2);
@@ -231,9 +233,7 @@ background-color: var(--gray2);
 
 }
 
-.card > p {
-  margin-bottom: 0;
-}
+
 
 
 
