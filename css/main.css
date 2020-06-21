@@ -218,15 +218,15 @@ background-color: var(--gray2);
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 70vw ;
-  max-width: 80vw;
+  min-width: 50vw ;
+  max-width: 70vw;
   background-color: var(--gray2);
   font-family: "Avenir Next", serif;
   margin: 1vh auto;
   flex-direction: column;
   border-radius: 10px;
-  font-size: 1.1rem;
-  padding: 2vh 3vw;
+  font-size: .9rem;
+  padding: 1vh 3vw;
   color: #bbe8fe;
   box-shadow:10px 10px 22px hsl(0, 0%, 11%), -2px -2px 4px inset hsla(0, 0%, 11%, 1), 2px 2px 4px inset hsl(0, 0%, 28%), -10px -10px 22px hsl(0, 0%, 28%);
 
@@ -249,7 +249,7 @@ background-color: var(--gray2);
 .nav-link > a {
   font-family: "Input Mono";
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--gray8);
 }
 
@@ -277,7 +277,7 @@ section.content-main {
   width: 90vw;
   text-align: justify;
 
-  font-size: 1.1rem;
+  font-size: .9rem;
   color: var(--light-blue)
 }
 
@@ -314,6 +314,8 @@ ul.img-list li.img-list-item a {
 ul.img-list li.img-list-item  img {
   max-width: 10vw;
   max-height: 10vh;
+  border: 2px solid #676767;
+  border-radius: 5px;
   width: auto;
   height: auto;
   display: block;
