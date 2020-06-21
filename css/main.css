@@ -469,7 +469,7 @@ and (min-width : 1000px) {
   }
 #about .card {
 
-  min-height: 40vh;
+  min-height: 20vh;
 }
 section.content-main {
   min-height: 400vh
